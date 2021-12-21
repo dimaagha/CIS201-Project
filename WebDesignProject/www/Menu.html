@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Tale Café</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- import the css file and javascript file -->
+		<link rel="stylesheet" type="text/css" href="../css/Style.css">
+		<script type="text/javascript" src="../js/JavaScript.js"></script>
+	</head>
+	<body>
+		<!-- create home page -->
+		<div class="home view">
+		
+			<!-- create top navigation bar & link the pages -->
+			<div id="home" class="topnav">
+			   <a href="#contact">Contact</a>
+			   <a href="#about">About</a>
+			   <a href="#menu">Menu</a>
+			   <a href="#home">Home</a>
+			   
+			   <!-- add the cart and item counter -->
+			   <img id="cart" class ="cart" src = "../img/emptyy.png" alt="empty-cart"> 
+			   <p id="item-count"  class="item-count"> 0 </p>
+			</div>
+			
+			<h1 class="title"> Tale Café</h1>
+			<img class ="logo" src = "../img/Logo.png" alt="Logo">
+			<p class="welc"> Welcome to my cafe!</p>
+
+		</div>
+	
+		<hr>
+
+		<!-- create menu page -->
+		<div class="menu view">
+		
+			<!-- create menu tabs -->
+			<div id="menu" class="menu-nav">
+				  <a onclick="displayDesserts()">Desserts</a>
+				  <a onclick="displayDrinks()">Drinks</a>
+				  
+			</div>
+			
+			<!-- create main menu content -->	
+			<div id="menu-content">
+				<h1 class="menu-title">Menu</h1>
+				<p class="menu-desc"> The finest coffee paired with the most delicious desserts!</p>
+			</div>
+			
+		</div>
+		
+		<hr>
+		<!-- create about page -->
+		<div class="view"  id="about">
+			<h3 class="about"> About Us</h3>
+			<img class ="contact-image" src = "../img/Logo.png" alt="Logo">
+			<div class="description">
+				<p>I'm Dima and I'm a second year student at Al-Yamamah University majoring in Network Engineering and Security. This is my CIS 201 term project about a café menu website!</p>
+			</div>
+		</div>
+		
+		<hr>
+		
+		<!-- create contact page -->
+		<div class="view" id="contact">
+			<h3 class="contact"> Contact Us</h3>
+			
+			<!-- create contact form -->
+			<form action="/submission.php" method="POST">
+				<table class="form">
+					<tr>
+						<td><input class="fname" type="text" name="firstname" value="First Name"></td>
+						<td rowspan="3"> <textarea  class="suggestion" rows="11" name="suggestion">Your Suggestions!</textarea></td>
+					
+					</tr>
+					<tr>
+						<td><input class="lname" type="text" name="lastname" value="Last Name"></td>
+					</tr>
+					<tr>
+						<td><input class="email" type="email" name="email" value="Email"></td>
+			
+					</tr>
+					<tr>
+						<td></td>
+						<td><input class="submit" type="submit" value="Submit"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		
+		<hr>
+		
+		<!-- create web footer -->
+		<footer>
+			<p> "Tale Cafe" 2021</p>
+		</footer>
+	</body>
+</html>
